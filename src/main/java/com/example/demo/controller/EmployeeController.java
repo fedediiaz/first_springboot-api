@@ -46,8 +46,8 @@ public class EmployeeController {
         String message = String.format("Employee with id: %s was not found", id);
         Employee updatedEmployee = employeeRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(message));
 
-        updatedEmployee.setFirst_name(employee.getFirst_name());
-        updatedEmployee.setLast_name((employee.getLast_name()));
+        updatedEmployee.setFirstName(employee.getFirstName());
+        updatedEmployee.setLastName((employee.getLastName()));
         updatedEmployee.setEmail((employee.getEmail()));
         employeeRepository.save(updatedEmployee);
 
