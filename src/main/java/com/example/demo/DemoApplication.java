@@ -1,13 +1,13 @@
-package com.first_api.first_api;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstApiApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstApiApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
